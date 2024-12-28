@@ -1,0 +1,14 @@
+name: Check Python Version
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  check-python:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check Python Version
+      run: python --version
